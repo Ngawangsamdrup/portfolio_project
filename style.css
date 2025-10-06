@@ -1,7 +1,3 @@
-img {
-    height:200px;
-    width:200px;
-}
 
 .name {
         text-align: center;
@@ -20,4 +16,50 @@ img {
 
 footer {
     text-align:center;
+}
+.container {
+    display: flex; /* activates the flex box layout, which aligns the elements (images and pragraph) side by side (hortiztal line/rows)*/
+    align-items:flex-start; /*align all top elements (vertically), so they are at a same level */
+    gap: 20px; /* spacing between the elements (pargraph and images) */
+}
+#portrait{
+    border:solid black;
+    border-width:10px 10px;
+    height:200px;
+    width:200px;
+  
+}
+
+.upper_case{
+   text-transform: uppercase;
+
+}
+
+.test{
+    border:3px solid black;
+}
+
+#new_font{
+    font-family:"Bitcount Prop Single Ink", system-ui;
+}
+
+#c_upper{
+    text-transform: uppercase;
+}
+
+#font_size{
+    font-size:20pt;
+}
+
+.c_images{
+    height:500px;
+    width:600px;
+    border:solid black;
+    border-width:10px;
+}
+
+.c_conatiner{
+    display:flex;
+    align-items:flex-start;
+    gap:20p;
 }
