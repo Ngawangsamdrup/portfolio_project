@@ -19,8 +19,16 @@ footer {
 }
 .container {
     display: flex; /* activates the flex box layout, which aligns the elements (images and pragraph) side by side (hortiztal line/rows)*/
-    align-items:flex-start; /*align all top elements (vertically), so they are at a same level */
+    align-items:flex-start; /*align all top elements (vertically) at top edge of the container */
     gap: 20px; /* spacing between the elements (pargraph and images) */
+}
+.text-box {
+    display:flex;
+    flex-direction:column; /* Changes the step from rows (flex) to columns */
+    gap:0%;
+}
+.text-box >h2 {
+    margin-bottom:0px;
 }
 #portrait{
     border:solid black;
@@ -52,14 +60,37 @@ footer {
 }
 
 .c_images{
-    height:500px;
-    width:600px;
+    height:300px;
+    width:400px;
     border:solid black;
     border-width:10px;
 }
 
-.c_conatiner{
+
+.c_container {
     display:flex;
-    align-items:flex-start;
-    gap:20p;
+    gap:10px;
+}
+
+@media (max-width:680px){
+    .container {
+        display:block;
+        width:100%;
+    }
+    .container > img {
+        display:block;
+        width:100%;
+    }
+    .container > .text-box {
+        display:block;
+    }
+
+    .c_container {
+        display:block;
+        width:100px;
+    }
+    .c_container >img {
+        display:block;
+        width:100px;
+    }
 }
