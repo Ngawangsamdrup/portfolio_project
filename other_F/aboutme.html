@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charest="UTF-8">
+        <meta name= "viewport" content = "width=device-width, initial-scale=1.0">
+    </head>
+        <style>
+            .f_c {
+                display:flex;
+                gap:5%;
+                justify-content:center;
+                margin-bottom:5%;
+            }
+
+            .p{
+                width:50%;
+            }
+            .I_P {
+                  height:200px;
+                  width:400px;
+            }
+            .logo {
+                     height:200px;
+                     width:250px;
+                     
+            }
+            .w_c {
+                display:flex;
+                gap:10%;
+                flex:1;
+                justify-content:center;
+            }
+            h1 {
+                text-transform:uppercase;
+                text-align:center;
+                font-weight:bold;
+                font-size:40px;
+            }
+            .heading {
+                text-align:center;
+                font-size:50px;
+                margin-bottom:5%;
+            }
+            .line {
+                border:5px solid black;
+            }
+            @media (max-width:640px) {
+                .f_c{
+                    display:block;
+                    width:100%;
+                    align-items:center;
+                }
+                .w_c {
+                     display:block;
+                     width:100%;
+                     flex:1;
+                     align-items:center;
+                }
+            }
+        </style>
+    <body>
+        <h1 class="heading"> About Me </h1>
+        <div class = "f_c">
+            <img  class = "I_P"src = "../images/Samdrup1.webp" alt="Image of me" >
+            <p class="p">
+                Hello,
+                My name is Ngawang Tendrel Samdrup, and I graduated from York College (CUNY) in May 2025 with a Bachelor of Science in Information Systems Management. 
+                During my time at York, I developed a strong interest in how technology can be used to improve systems, solve real-world problems, and make processes 
+                more efficient and accessible.Outside of academics, I enjoy staying active and creative. In my free time, I like to play basketball, go for runs, and 
+                explore new movies or YouTube videos—especially those related to tech, design, or storytelling. I’m always curious to learn something new and find inspiration 
+                in how technology and creativity intersect.I’m passionate about continuing to grow both personally and professionally, and I look forward to contributing my skills 
+                and enthusiasm to meaningful projects that make a difference.
+            <p>
+         </div>
+        <hr class="line">
+        </hr>
+        <h1>My Work</h1>
+            <div class = "w_c">
+                <a href = "/other_F/ ICBMEIS-2528.pdf" target = "_blank"> <img class ="logo" src="/images/paper.png"></a>
+                <a href = "https://github.com/Ngawangsamdrup" target = "_blank"> <img class = logo src ="/images/GitHub-Logo.png">
+            </div>
+    </body>
+</html>
